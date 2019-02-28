@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Bootstrap for Mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap for CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Bootstrap for Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap for Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> Research </title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Dr. Araghya Goswami</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Research<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Link 1</a> </li>
+                        <li><a href="search.html">Search Page</a> </li>
+                        <li><a href="#">Link 2</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">External Collaborators</a></li>
+                <li><a href="#">Publications-Talks</a></li>
+                <li><a href="teachings.html">Teachings</a></li>
+                <li><a href="#">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="innernav">
+        <form action="database.php" method="POST">
+            <h3> Search the database</h3>
+            <div class="brand"> <label for="brandselect">Brand</label><br>
+                <select multiple class="form-control" name="brand[]" id="brandselect">
+                  <option value="mi">MI</option>
+                  <option value="samsung">Samsung</option>
+                  <option value="apple">Apple</option>
+                  <option value="redmi">Redmi</option>
+                  <option value="oppo">Oppo</option>
+                  <option value="vivo">VIVO</option>
+                </select>
+            </div>
+            <div class="ram"> <label for="ramselect">RAM</label><br>
+                <select multiple class="form-control" name="ram[]" id="ramselect">
+                  <option>6GB and Above</option>
+                  <option>4GB</option>
+                  <option>3GB</option>
+                  <option>2GB</option>
+                  <option>1GB</option>
+                  <option>512MB</option>
+                </select>
+            </div>
+
+            <div class="os"> <label for="osselect">Operating System</label><br>
+                <select multiple class="form-control" name="operating_system[]" id="osselect">
+                  <option>Android</option>
+                  <option>Brew</option>
+                  <option>iOS</option>
+                  <option>Linux</option>
+                  <option>Windows</option>
+                </select>
+            </div>
+
+
+            <br><br>
+            <button type="submit" class="btn btn-primary search">
+                Search
+              </button>
+
+        </form>
+        <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><b>Contact Information</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td><input name="name" type="text" placeholder="Name"><br></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input name="email" type="email" placeholder="Email ID"></br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Purpose</td>
+                                    <td><input name="purpose" type="text" placeholder="Purpose"><br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center">
+        This is footer
+    </div>
+
+</body>

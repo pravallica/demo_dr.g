@@ -1,0 +1,76 @@
+.innernav {
+    width: 1150px;
+    margin: 0px auto;
+}
+
+.navbar .navbar-brand {
+    color: #006747 !important;
+    font-weight: bold;
+}
+
+.navbar .nav {
+    color: #006747 !important;
+}
+
+.textbox {
+    border: 1px solid gray !important;
+    width: 100%;
+    height: 80px;
+    border: 30px;
+}
+
+.brand,
+.ram,
+.int-stor,
+.os,
+.battery,
+.screen,
+.resolution,
+.camera {
+    padding: 50px;
+    padding-right: 100px;
+    display: inline-block;
+    width: 370px;
+}
+
+.innernav {
+    color: #006747;
+}
+
+.search {
+    margin-left: 500px;
+    background-color: #006747;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.teach {
+    width: 1150px;
+    padding-left: 30px;
+    margin: 0px auto;
+    line-height: 40px;
+    color: #006747;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #006747 !important;
+}
+
+.profile {
+    color: #006747 !important;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    line-height: 96px;
+}
