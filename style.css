@@ -69,8 +69,8 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    height: 100px;
-    background-color: black;
+    height: 40px;
+    background-color: #006747;
     color: white;
     line-height: 96px;
 }

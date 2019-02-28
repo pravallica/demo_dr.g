@@ -86,7 +86,7 @@ if (isset($_POST['operating_system'])) {
 }
 
 
-echo "<br />".$sql;
+
 
 $result=mysqli_query($conn,$sql);
 $resultCheck=mysqli_num_rows($result);
